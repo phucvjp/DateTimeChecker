@@ -180,7 +180,7 @@ export default function App() {
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
           <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
-              Error
+              Success
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="grid-example">
@@ -199,12 +199,12 @@ export default function App() {
   };
 
   return (
-    <div className='w-screen place-content-center'>
-      <div className='w-1/2 mx-auto '>
-        <img src={logo} alt="Screenshot" className='top-0 left-0' />
+    <div className='w-screen place-content-center '>
+      <div className='w-fit  mx-auto border border-red-400 p-3'>
+        <img src={logo} alt="Screenshot" className='top-0 left-0 ' />
         <h1 className="text-4xl text-center text-blue-600">Date Time Checker</h1>
         <form className=" mx-auto">
-          <table className="table-auto mx-auto">
+          <table className=" mx-auto">
             <tbody>
               <tr>
                 <td className=" px-4 py-2">Day</td>
@@ -218,7 +218,6 @@ export default function App() {
                 <td className=" px-4 py-2">Year</td>
                 <td className=" px-4 py-2"><input type='text' id='year' className='border' /></td>
               </tr>
-
             </tbody>
           </table>
           <div className='text-center w-full'>
