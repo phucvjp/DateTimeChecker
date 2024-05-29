@@ -62,8 +62,7 @@ export default function App() {
   };
 
   function CheckDate(props) {
-    console.log(parseInt(day));
-    if (day!=0&&!parseInt(day)) {
+    if (day!=='0'&&!parseInt(day)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
@@ -79,7 +78,7 @@ export default function App() {
           </Modal.Footer>
         </Modal>
       )
-    } else if (month!=0&&!parseInt(month)) {
+    } else if (month!=='0'&&!parseInt(month)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
@@ -95,7 +94,7 @@ export default function App() {
           </Modal.Footer>
         </Modal>
       )
-    } else if (year!=0&&!parseInt(year)) {
+    } else if (!parseInt(year)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
@@ -184,7 +183,7 @@ export default function App() {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="grid-example">
-            Valid Date
+            {day}/{month}/{year} is Valid Date
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={props.onHide}>Close</Button>
