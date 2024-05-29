@@ -28,7 +28,7 @@ describe('Date Checker E2E Tests', () => {
     { day: '15', month: '06', year: '2024', expectedResult: 'Valid Date' },
     { day: '31', month: '02', year: '2024', expectedResult: 'Invalid Date' },
     { day: '29', month: '02', year: '2024', expectedResult: 'Valid Date' }, // Leap year
-    { day: '32', month: '01', year: '2024', expectedResult: 'Invalid Date' },
+    { day: '32', month: '01', year: '2024', expectedResult: 'Input data for Day is out of range!' },
     { day: '30', month: '04', year: '2024', expectedResult: 'Valid Date' },
     { day: '31', month: '04', year: '2024', expectedResult: 'Invalid Date' },
     { day: 'abc', month: '06', year: '2024', expectedResult: 'Input data for Day is not a number' },

@@ -62,7 +62,8 @@ export default function App() {
   };
 
   function CheckDate(props) {
-    if (!parseInt(day)) {
+    console.log(parseInt(day));
+    if (day!=0&&!parseInt(day)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
@@ -78,7 +79,7 @@ export default function App() {
           </Modal.Footer>
         </Modal>
       )
-    } else if (!parseInt(month)) {
+    } else if (month!=0&&!parseInt(month)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
@@ -94,7 +95,7 @@ export default function App() {
           </Modal.Footer>
         </Modal>
       )
-    } else if (!parseInt(year)) {
+    } else if (year!=0&&!parseInt(year)) {
       return (
         <Modal {...props} aria-labelledby="contained-modal-title-vcenter absolute">
           <Modal.Header closeButton>
