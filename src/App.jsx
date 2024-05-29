@@ -221,7 +221,7 @@ export default function App() {
             </tbody>
           </table>
           <div className='text-center w-full'>
-            <input type='reset' value='Clear' className="mx-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" />
+            <input type='reset' value='Clear' id={"clear"} className="mx-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" />
             <button type='button' onClick={onClickCheck} className="mx-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Check</button>
           </div>
         </form>
